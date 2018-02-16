@@ -1,0 +1,6 @@
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\bin\Debug\Mediator.exe.config
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\bin\Debug\Mediator.exe
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\bin\Debug\Mediator.pdb
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\obj\Debug\Mediator.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\obj\Debug\Mediator.exe
+C:\Users\fmi\Desktop\Upr2-1b\Mediator\obj\Debug\Mediator.pdb

@@ -1,0 +1,13 @@
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\fmi\Desktop\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.pdb
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\HP\Documents\Upr1-1a\AbstractFactory\obj\Debug\AbstractFactory.pdb

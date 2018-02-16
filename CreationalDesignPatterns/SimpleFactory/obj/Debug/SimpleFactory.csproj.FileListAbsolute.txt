@@ -1,0 +1,13 @@
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.exe.config
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.exe
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.pdb
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.exe
+C:\Users\fmi\Desktop\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.pdb
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.exe.config
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.exe
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\bin\Debug\SimpleFactory.pdb
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.exe
+C:\Users\HP\Documents\Upr1-1a\SimpleFactory\obj\Debug\SimpleFactory.pdb

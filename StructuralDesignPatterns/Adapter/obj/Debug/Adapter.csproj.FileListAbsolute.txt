@@ -1,0 +1,5 @@
+C:\Users\fmi\Desktop\Upr2-1b\Adapter\bin\Debug\Adapter.exe.config
+C:\Users\fmi\Desktop\Upr2-1b\Adapter\bin\Debug\Adapter.exe
+C:\Users\fmi\Desktop\Upr2-1b\Adapter\bin\Debug\Adapter.pdb
+C:\Users\fmi\Desktop\Upr2-1b\Adapter\obj\Debug\Adapter.exe
+C:\Users\fmi\Desktop\Upr2-1b\Adapter\obj\Debug\Adapter.pdb

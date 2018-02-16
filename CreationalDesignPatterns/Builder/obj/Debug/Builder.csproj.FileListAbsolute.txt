@@ -1,0 +1,13 @@
+C:\Users\fmi\Desktop\Upr1-1a\Builder\bin\Debug\Builder.exe.config
+C:\Users\fmi\Desktop\Upr1-1a\Builder\bin\Debug\Builder.exe
+C:\Users\fmi\Desktop\Upr1-1a\Builder\bin\Debug\Builder.pdb
+C:\Users\fmi\Desktop\Upr1-1a\Builder\obj\Debug\Builder.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\Upr1-1a\Builder\obj\Debug\Builder.exe
+C:\Users\fmi\Desktop\Upr1-1a\Builder\obj\Debug\Builder.pdb
+C:\Users\HP\Documents\Upr1-1a\Builder\bin\Debug\Builder.exe.config
+C:\Users\HP\Documents\Upr1-1a\Builder\bin\Debug\Builder.exe
+C:\Users\HP\Documents\Upr1-1a\Builder\bin\Debug\Builder.pdb
+C:\Users\HP\Documents\Upr1-1a\Builder\obj\Debug\Builder.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Upr1-1a\Builder\obj\Debug\Builder.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Upr1-1a\Builder\obj\Debug\Builder.exe
+C:\Users\HP\Documents\Upr1-1a\Builder\obj\Debug\Builder.pdb
