@@ -5,9 +5,9 @@ namespace SimpleFactory
 {
     public static class CoffeeFactory
     {
-        public static Coffee GetCoffee(CoffeeType coffeType)
+        public static Coffee GetCoffee(CoffeeType coffeeType)
         {
-            switch (coffeType)
+            switch (coffeeType)
             {
                 case CoffeeType.Regular:
                     return new RegularCoffee();
