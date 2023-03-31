@@ -1,5 +1,5 @@
 # Design Patterns
-Design patterns examples written in **C#**, created initially for teaching purposes 🎓
+Design patterns examples written in **C#**, created initially for teaching purposes :mortar_board:
 
 Including the following design patterns:
 - **Creational**
