@@ -15,8 +15,6 @@ namespace ChainOfResponsibility
 
             Employee employee = CoffeeShopChain.GetEmployee();
             employee.ProcessComplaint(complaint);
-
-            Console.ReadKey(true);
         }
     }
 }

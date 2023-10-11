@@ -1,7 +1,6 @@
 ﻿using AbstractFactory.Coffees.Milk;
 using AbstractFactory.Coffees.Plain;
 using AbstractFactory.Factories;
-using System;
 
 namespace AbstractFactory
 {
@@ -22,8 +21,6 @@ namespace AbstractFactory
             frenchMilkCoffee.Print();
             italianPlainCoffee.Print();
             italianMilkCoffee.Print();
-
-            Console.ReadKey(true);
         }
     }
 }

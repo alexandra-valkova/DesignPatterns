@@ -12,8 +12,6 @@ namespace SimpleFactory
 
             Coffee coffee = CoffeeFactory.GetCoffee(coffeeType);
             coffee.Print();
-
-            Console.ReadKey(true);
         }
     }
 }

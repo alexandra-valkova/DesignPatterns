@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Adapter
+﻿namespace Adapter
 {
     class Program
     {
@@ -8,8 +6,6 @@ namespace Adapter
         {
             CoffeeShop coffeeShop = new CoffeeShop();
             coffeeShop.DisplayDesserts();
-
-            Console.ReadKey(true);
         }
     }
 }

@@ -23,8 +23,6 @@ namespace Builder
 
             Console.WriteLine("Italian Breakfast Menu:");
             italianMenu.Print();
-
-            Console.ReadKey(true);
         }
     }
 }

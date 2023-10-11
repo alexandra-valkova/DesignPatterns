@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Facade
+﻿namespace Facade
 {
     class Program
     {
@@ -8,8 +6,6 @@ namespace Facade
         {
             Facade facade = new Facade();
             facade.Pay();
-
-            Console.ReadKey(true);
         }
     }
 }

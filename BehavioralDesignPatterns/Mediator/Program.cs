@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Mediator
+﻿namespace Mediator
 {
     class Program
     {
@@ -16,8 +14,6 @@ namespace Mediator
 
             waiter.Send("Jack", "Cheesecake ordered!");
             cook.Send("John", "Cheesecake is ready!");
-
-            Console.ReadKey(true);
         }
     }
 }

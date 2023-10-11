@@ -10,8 +10,6 @@ namespace Singleton
             Singleton singleton1 = Singleton.GetInstance();
 
             Console.WriteLine(singleton == singleton1);
-
-            Console.ReadKey(true);
         }
     }
 }
