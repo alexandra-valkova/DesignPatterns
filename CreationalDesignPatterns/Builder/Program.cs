@@ -1,47 +1,28 @@
-﻿using Builder;
-using Builder.Builders;
-using Builder.Enums;
+﻿using Builder.Builders;
+using System;
 
-Menu menu;
-IMenuBuilder menuBuilder;
-CoffeeShopDirector coffeeShopDirector;
-
-Console.Write("Choose between French or Italian breakfast: ");
-if (Enum.TryParse(Console.ReadLine(), ignoreCase: true, out CoffeeShop coffeeShop) && Enum.IsDefined(coffeeShop))
+namespace Builder
 {
-    menuBuilder = coffeeShop switch
+    class Program
     {
-        CoffeeShop.French => new FrenchBreakfastMenuBuilder(),
-        CoffeeShop.Italian => new ItalianBreakfastMenuBuilder(),
-        _ => throw new NotSupportedException()
-    };
+        static void Main(string[] args)
+        {
+            CoffeeShopDirector coffeeShop = new CoffeeShopDirector();
 
-    coffeeShopDirector = new CoffeeShopDirector(menuBuilder);
-}
+            IMenuBuilder frenchMenuBuilder = new FrenchBreakfastBuilder();
+            IMenuBuilder italianMenuBuilder = new ItalianBreakfastBuilder();
 
-else
-{
-    Console.WriteLine("Wrong value!");
-    return;
-}
+            coffeeShop.Construct(frenchMenuBuilder);
+            Menu frenchMenu = frenchMenuBuilder.GetMenu();
 
-Console.WriteLine(@"Choose between one of the following menus:
-Hot drink + Dessert [1]
-Cold drink + Dessert [2]
-Hot drink + Cold drink [3]
-Hot drink + Cold drink + Dessert [4]");
+            coffeeShop.Construct(italianMenuBuilder);
+            Menu italianMenu = italianMenuBuilder.GetMenu();
 
-if (Enum.TryParse(Console.ReadLine(), ignoreCase: true, out MenuType menuType) && Enum.IsDefined(menuType))
-{
-    coffeeShopDirector.PrepareMenu(menuType);
-    menu = menuBuilder.GetMenu();
+            Console.WriteLine("French Breakfast Menu:");
+            frenchMenu.Print();
 
-    Console.WriteLine($"{coffeeShop} Breakfast:");
-    menu.Print();
-}
-
-else
-{
-    Console.WriteLine("Wrong value!");
-    return;
+            Console.WriteLine("Italian Breakfast Menu:");
+            italianMenu.Print();
+        }
+    }
 }

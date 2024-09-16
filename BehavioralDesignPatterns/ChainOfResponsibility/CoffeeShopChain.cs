@@ -4,9 +4,7 @@ namespace ChainOfResponsibility
 {
     public class CoffeeShopChain
     {
-        private readonly List<Employee> _employees;
-
-        public CoffeeShopChain()
+        public static Employee GetEmployee()
         {
             Employee waiter = new Waiter(Priority.Low);
             Employee cook = new Cook(Priority.Medium);
@@ -15,12 +13,7 @@ namespace ChainOfResponsibility
             waiter.SetSuccessor(cook);
             cook.SetSuccessor(manager);
 
-            _employees = [waiter, cook, manager];
-        }
-
-        public Employee GetEmployee()
-        {
-            return _employees.First(employee => employee.Level == Priority.Low);
+            return waiter;
         }
     }
 }

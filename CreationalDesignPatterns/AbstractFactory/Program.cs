@@ -1,42 +1,26 @@
-﻿using AbstractFactory.Coffees;
-using AbstractFactory.Enums;
+﻿using AbstractFactory.Coffees.Milk;
+using AbstractFactory.Coffees.Plain;
 using AbstractFactory.Factories;
 
-CoffeeFactory coffeeFactory;
-Coffee coffee;
-
-Console.Write("Choose French or Italian Coffee: ");
-if (Enum.TryParse(Console.ReadLine(), ignoreCase: true, out CoffeeShop coffeeShop) && Enum.IsDefined(coffeeShop))
+namespace AbstractFactory
 {
-    coffeeFactory = coffeeShop switch
+    class Program
     {
-        CoffeeShop.French => new FrenchCoffeeFactory(),
-        CoffeeShop.Italian => new ItalianCoffeeFactory(),
-        _ => throw new NotSupportedException()
-    };
-}
+        static void Main(string[] args)
+        {
+            CoffeeFactory frenchCoffeeFactory = new FrenchCoffeeFactory();
+            CoffeeFactory italianCoffeeFactory = new ItalianCoffeeFactory();
 
-else
-{
-    Console.WriteLine("Wrong value!");
-    return;
-}
+            PlainCoffee frenchPlainCoffee = frenchCoffeeFactory.GetPlainCoffee();
+            MilkCoffee frenchMilkCoffee = frenchCoffeeFactory.GetMilkCoffee();
 
-Console.Write("Choose Plain or Milk Coffee: ");
-if (Enum.TryParse(Console.ReadLine(), ignoreCase: true, out CoffeeType coffeeType) && Enum.IsDefined(coffeeType))
-{
-    coffee = coffeeType switch
-    {
-        CoffeeType.Plain => coffeeFactory.GetPlainCoffee(),
-        CoffeeType.Milk => coffeeFactory.GetMilkCoffee(),
-        _ => throw new NotSupportedException()
-    };
-}
+            PlainCoffee italianPlainCoffee = italianCoffeeFactory.GetPlainCoffee();
+            MilkCoffee italianMilkCoffee = italianCoffeeFactory.GetMilkCoffee();
 
-else
-{
-    Console.WriteLine("Wrong value!");
-    return;
+            frenchPlainCoffee.Print();
+            frenchMilkCoffee.Print();
+            italianPlainCoffee.Print();
+            italianMilkCoffee.Print();
+        }
+    }
 }
-
-coffee.Print();

@@ -1,10 +1,10 @@
 ﻿namespace SimpleFactory.Coffees
 {
-    public class Cappuccino : Coffee
+    public class Macchiato : Coffee
     {
         public override string Name
         {
-            get { return "Cappuccino"; }
+            get { return "Macchiato"; }
         }
 
         public override int CoffeeContent
@@ -14,7 +14,7 @@
 
         public override int MilkContent
         {
-            get { return 200; }
+            get { return 100; }
         }
     }
 }

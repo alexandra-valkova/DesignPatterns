@@ -2,8 +2,9 @@
 {
     public class Waiter : Employee
     {
-        public Waiter(Priority level) : base(level)
+        public Waiter(Priority level)
         {
+            this.level = level;
         }
     }
 }

@@ -1,13 +1,15 @@
-﻿namespace Singleton
+﻿using System;
+
+namespace Singleton
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Singleton singleton1 = Singleton.Instance;
-            Singleton singleton2 = Singleton.Instance;
+            Singleton singleton = Singleton.GetInstance();
+            Singleton singleton1 = Singleton.GetInstance();
 
-            Console.WriteLine(singleton1 == singleton2);
+            Console.WriteLine(singleton == singleton1);
         }
     }
 }

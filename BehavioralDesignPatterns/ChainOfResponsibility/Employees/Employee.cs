@@ -1,33 +1,28 @@
-﻿namespace ChainOfResponsibility.Employees
+﻿using System;
+
+namespace ChainOfResponsibility.Employees
 {
     public abstract class Employee
     {
-        public Priority Level { get; private set; }
+        protected Priority level;
 
-        public Employee? Successor { get; private set; }
-
-        protected Employee(Priority level)
-        {
-            Level = level;
-        }
+        public Employee successor;
 
         public void SetSuccessor(Employee successor)
         {
-            Successor = successor.Level > Level
-                ? successor
-                : throw new ArgumentException("Cannot assign successor with a lower or equal priority level!", nameof(successor));
+            this.successor = successor;
         }
 
         public void ProcessComplaint(Complaint complaint)
         {
-            if (complaint.Priority <= Level)
+            if (complaint.Priority <= level)
             {
                 Respond(complaint);
             }
 
-            else if (Successor is not null)
+            else if (successor != null)
             {
-                Successor.ProcessComplaint(complaint);
+                successor.ProcessComplaint(complaint);
             }
 
             else
@@ -38,7 +33,7 @@
 
         protected virtual void Respond(Complaint complaint)
         {
-            Console.WriteLine($"Mr/Mrs {complaint.CustomerName}, your complaint will be handled by the {GetType().Name}.");
+            Console.WriteLine("Mr/Mrs {0}, your complaint will be handled by the {1}", complaint.CustomerName, GetType().Name.ToString());
         }
     }
 }

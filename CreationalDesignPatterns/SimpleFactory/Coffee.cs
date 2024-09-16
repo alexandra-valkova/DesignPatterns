@@ -1,4 +1,6 @@
-﻿namespace SimpleFactory
+﻿using System;
+
+namespace SimpleFactory
 {
     public abstract class Coffee
     {
@@ -10,7 +12,7 @@
 
         public void Print()
         {
-            Console.WriteLine($"{Name} contains {CoffeeContent} ml coffee and {MilkContent} ml milk.");
+            Console.WriteLine("{0} contains {1} ml coffee and {2} ml milk", Name, CoffeeContent, MilkContent);
         }
     }
 }

@@ -1,17 +1,17 @@
-﻿using SimpleFactory;
+﻿using System;
 
-Console.WriteLine("Available coffees: Espresso, Ristretto, Cappuccino, Caffe Latte.");
-Console.Write("Select coffee: ");
-
-if (Enum.TryParse(Console.ReadLine(), ignoreCase: true, out CoffeeType coffeeType) && Enum.IsDefined(coffeeType))
+namespace SimpleFactory
 {
-    CoffeeFactory coffeeFactory = new();
-    Coffee coffee = coffeeFactory.GetCoffee(coffeeType);
-    coffee.Print();
-}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter coffee number: ");
+            int coffeeNumber = int.Parse(Console.ReadLine());
+            CoffeeType coffeeType = (CoffeeType)coffeeNumber;
 
-else
-{
-    Console.WriteLine("Wrong value!");
-    return;
+            Coffee coffee = CoffeeFactory.GetCoffee(coffeeType);
+            coffee.Print();
+        }
+    }
 }

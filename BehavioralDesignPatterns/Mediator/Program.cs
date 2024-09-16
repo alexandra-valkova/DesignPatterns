@@ -1,13 +1,19 @@
-﻿using Mediator;
-using Mediator.Employees;
+﻿namespace Mediator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IMediator mediator = new Mediator();
 
-IMediator mediator = new Mediator.Mediator();
+            Employee waiter = new Waiter("John", mediator);
+            Employee cook = new Cook("Jack", mediator);
 
-Employee waiter = new Waiter("John");
-Employee cook = new Cook("Jack");
+            mediator.Register(waiter);
+            mediator.Register(cook);
 
-mediator.Register(waiter);
-mediator.Register(cook);
-
-waiter.Send(receiver: cook, message: "Cheesecake ordered!");
-cook.Send(receiver: waiter, message: "Cheesecake is ready!");
+            waiter.Send("Jack", "Cheesecake ordered!");
+            cook.Send("John", "Cheesecake is ready!");
+        }
+    }
+}

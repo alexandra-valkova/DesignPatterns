@@ -1,19 +1,25 @@
 ﻿using SimpleFactory.Coffees;
+using System;
 
 namespace SimpleFactory
 {
-    public class CoffeeFactory
+    public static class CoffeeFactory
     {
-        public Coffee GetCoffee(CoffeeType coffeeType)
+        public static Coffee GetCoffee(CoffeeType coffeeType)
         {
-            return coffeeType switch
+            switch (coffeeType)
             {
-                CoffeeType.Espresso => new Espresso(),
-                CoffeeType.Ristretto => new Ristretto(),
-                CoffeeType.Cappuccino => new Cappuccino(),
-                CoffeeType.CaffeLatte => new CaffeLatte(),
-                _ => throw new NotSupportedException()
-            };
+                case CoffeeType.Regular:
+                    return new RegularCoffee();
+                case CoffeeType.Double:
+                    return new DoubleCoffee();
+                case CoffeeType.Cappuccino:
+                    return new Cappuccino();
+                case CoffeeType.Macchiato:
+                    return new Macchiato();
+                default:
+                    throw new ArgumentException();
+            }
         }
     }
 }
