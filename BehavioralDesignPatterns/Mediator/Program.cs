@@ -1,19 +1,13 @@
-﻿namespace Mediator
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            IMediator mediator = new Mediator();
+﻿using Mediator;
+using Mediator.Employees;
 
-            Employee waiter = new Waiter("John", mediator);
-            Employee cook = new Cook("Jack", mediator);
+IMediator mediator = new Mediator.Mediator();
 
-            mediator.Register(waiter);
-            mediator.Register(cook);
+Employee waiter = new Waiter("John");
+Employee cook = new Cook("Jack");
 
-            waiter.Send("Jack", "Cheesecake ordered!");
-            cook.Send("John", "Cheesecake is ready!");
-        }
-    }
-}
+mediator.Register(waiter);
+mediator.Register(cook);
+
+waiter.Send(receiver: cook, message: "Cheesecake ordered!");
+cook.Send(receiver: waiter, message: "Cheesecake is ready!");
