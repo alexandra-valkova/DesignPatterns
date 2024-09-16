@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AbstractFactory.Coffees
+﻿namespace AbstractFactory.Coffees
 {
     public abstract class Coffee
     {
@@ -12,7 +10,7 @@ namespace AbstractFactory.Coffees
 
         public void Print()
         {
-            Console.WriteLine("{0} contains {1} ml coffee and {2} ml milk", Name, CoffeeContent, MilkContent);
+            Console.WriteLine($"{Name} contains {CoffeeContent} ml coffee and {MilkContent} ml milk");
         }
     }
 }

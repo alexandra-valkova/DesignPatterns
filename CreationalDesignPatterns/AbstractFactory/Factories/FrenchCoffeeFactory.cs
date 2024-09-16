@@ -5,14 +5,8 @@ namespace AbstractFactory.Factories
 {
     public class FrenchCoffeeFactory : CoffeeFactory
     {
-        public override PlainCoffee GetPlainCoffee()
-        {
-            return new DoubleCoffee();
-        }
+        public override PlainCoffee GetPlainCoffee() => new Espresso();
 
-        public override MilkCoffee GetMilkCoffee()
-        {
-            return new Macchiato();
-        }
+        public override MilkCoffee GetMilkCoffee() => new CaffeLatte();
     }
 }

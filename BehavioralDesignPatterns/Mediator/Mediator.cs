@@ -1,27 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using Mediator.Employees;
 
 namespace Mediator
 {
     public class Mediator : IMediator
     {
-        private Dictionary<string, Employee> employees = new Dictionary<string, Employee>();
+        private readonly Dictionary<string, Employee> _employees;
+
+        public Mediator()
+        {
+            _employees = [];
+        }
 
         public void Register(Employee employee)
         {
-            if (!employees.ContainsValue(employee))
-            {
-                employees[employee.Name] = employee;
-            }
-            employee.Mediator = this;
+            _employees.Add(key: employee.Name, value: employee);
+            employee.SetMediator(this);
         }
 
-        public void SendMessage(string from, string to, string message)
+        public void SendMessage(Employee sender, Employee receiver, string message)
         {
-            Employee employee = employees[to];
-
-            if (employee != null)
+            if (_employees.GetValueOrDefault(receiver.Name) is not null)
             {
-                employee.Receive(from, message);
+                receiver.Receive(sender, message);
             }
         }
     }

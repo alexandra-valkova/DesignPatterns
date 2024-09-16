@@ -2,9 +2,9 @@
 {
     public enum CoffeeType
     {
-        Regular,
-        Double,
-        Cappuccino,
-        Macchiato
+        Espresso = 1,
+        Ristretto = 2,
+        Cappuccino = 3,
+        CaffeLatte = 4
     }
 }

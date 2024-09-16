@@ -1,23 +1,11 @@
 ﻿namespace Singleton
 {
-    public class Singleton
+    public sealed class Singleton
     {
-        // eager loading
-        //private readonly Singleton instance = new Singleton();
-        private static Singleton instance;
+        private static Singleton? instance;
 
-        private Singleton()
-        {
-        }
+        private Singleton() { }
 
-        public static Singleton GetInstance()
-        {
-            if (instance == null)
-            {
-                instance = new Singleton();
-            }
-
-            return instance;
-        }
+        public static Singleton Instance => instance ??= new Singleton();
     }
 }
