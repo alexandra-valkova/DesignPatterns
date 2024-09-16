@@ -13,3 +13,5 @@ Including the following design patterns:
 - **Behavioral**
   - [Chain of Responsibility](BehavioralDesignPatterns/ChainOfResponsibility)
   - [Mediator](BehavioralDesignPatterns/Mediator)
+
+:construction: A new revised version can be found in the [**revised** branch](https://github.com/alexandra-valkova/DesignPatterns/tree/revised) :herb:
