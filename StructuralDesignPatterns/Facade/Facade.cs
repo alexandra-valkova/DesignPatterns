@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Facade.Entities;
 
 namespace Facade
 {
     public class Facade
     {
-        Order order = new Order
-        {
-            Drinks = new List<Drink>
-            {
-                new Drink { Name = "Tea", Price = 2 },
-                new Drink { Name = "Coffee", Price = 3 },
-                new Drink { Name = "Hot Chocolate", Price = 3 }
-            }
-        };
+        private readonly Cashier _cashier;
 
-        public void Pay()
+        public Facade()
         {
-            Calculator calc = new Calculator();
-            int sum = calc.Sum(order);
-            Console.WriteLine("You paid " + sum);
+            _cashier = new Cashier("Alexandra");
+        }
+
+        public void PlaceOrder(Order order, double cash)
+        {
+            Bill? bill = _cashier.GenerateBill(order, cash);
+            Console.WriteLine(bill?.ToString() ?? "Not enough money to process payment!");
         }
     }
 }
