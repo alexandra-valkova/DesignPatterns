@@ -2,9 +2,8 @@
 {
     public class Manager : Employee
     {
-        public Manager(Priority level)
+        public Manager(Priority level) : base(level)
         {
-            this.level = level;
         }
     }
 }
