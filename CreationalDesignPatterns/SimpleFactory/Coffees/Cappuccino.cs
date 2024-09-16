@@ -2,19 +2,10 @@
 {
     public class Cappuccino : Coffee
     {
-        public override string Name
-        {
-            get { return "Cappuccino"; }
-        }
+        public override string Name => "Cappuccino";
 
-        public override int CoffeeContent
-        {
-            get { return 100; }
-        }
+        public override int CoffeeContent => 60;
 
-        public override int MilkContent
-        {
-            get { return 200; }
-        }
+        public override int MilkContent => 120;
     }
 }
