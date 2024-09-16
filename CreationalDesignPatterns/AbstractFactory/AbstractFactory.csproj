@@ -5,10 +5,4 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Coffees\Milk\" />
-    <Folder Include="Coffees\Plain\" />
-    <Folder Include="Factories\" />
-  </ItemGroup>
-
 </Project>
